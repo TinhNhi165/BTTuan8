@@ -153,10 +153,10 @@
         </div>
         <div class="row">
             <div class="col-4 col-md-4">
-                <h6>Mã sinh viên: 22687331</h6>
+                <h6>Mã sinh viên: 22678731 </h6>
             </div>
             <div class="col-4 col-md-4">
-                <h6>Họ tên: Ngô Thị Thanh Ly</h6>
+                <h6>Họ tên: Nguyễn Thị Tình Nhi</h6>
             </div>
             <div class="col-4 col-md-4">
                 <h6>Phòng thi: ________________</h6>
@@ -194,11 +194,11 @@
                
             }
             function kiemTraDC() {
-                var mauKT1 = /^[A-Za-z0-9_]{1,}(@iuh.edu.vn)$/; 
-                var mauKT = /(abc)$/; 
+                var mauKT1 = /^[A-Za-z0-9_]{1,}(@iuh.edu.vn)$/; // Sửa biểu thức chính quy để kiểm tra email
+                var mauKT = /(abc)$/; // Biểu thức này có thể không cần thiết
                 if ($("#txtDC").val() == "") {
                     $("#tbDC").html("Bắt buộc nhập");
-                } else if (mauKT1.test($("#txtDC").val()) == true) { 
+                } else if (mauKT1.test($("#txtDC").val()) == true) { // Sửa từ mauKT thành mauKT1
                     $("#tbDC").html("*");
                 } else {
                     $("#tbDC").html("Nhập sai");
